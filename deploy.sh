@@ -12,7 +12,7 @@ docker push rayrayndwiga/multi-server:$SHA
 docker push rayrayndwiga/multi-worker:$SHA
 
 # Apply k8s
-kubect apply -f k8s
+kubectl apply -f k8s
 
 # Imperatively set
 # kubectl set image deployments/server-deployment server=rayrayndwiga/multi-server:$SHA
